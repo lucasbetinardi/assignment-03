@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en-us" class="no-js">
+<head>
+  <title>Dropbox</title>
+  
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <link rel="stylesheet" media="screen" href="css/reset.css" />
+  <link rel="stylesheet" media="screen" href="css/screen.css" />
+  
+  <script src="modernizr.custom.32508.js"></script>
+</head>
+
+<body>
+  <h1>your stuff, anywhere</h1>
+ 
+  <form action="#null" id="signin" method="POST">
+
+    <fieldset>
+      <label for="email">E-mail</label>
+      <input type="email" name="email" id="email" placeholder="E-mail" />
+    </fieldset>
+
+    <fieldset>
+      <legend for="password">Password</legend>
+
+      <input type="radio" name="password" id="new-user" />
+      <label for="new-user">I don't have an account.</label>
+      
+      <input type="radio" name="password" id="exist-user" />
+      <label for="exist-user">
+        I have one:
+        <input type="password" name="password" id="password" placeholder="Password" />
+      </label>
+    </fieldset>
+
+    <fieldset>
+      <label for="submit">Sign In</label>
+      <input type="submit" name="submit" id="submit" value="Sign In" />
+    </fieldset>
+
+  </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script>
+  jQuery.noConflict();
+  (function($) {
+    $(function() {
+      $('html').removeClass('no-js').addClass('has-js');
+      $('#username').blur(function() {
+        if ($(this).val() == 'lucasbetinardi') { $(this).addClass('valid'); }
+        
+      });
+    });
+  })(jQuery);
+</script>
+
+
+
+
+
+</body>
+</html>
