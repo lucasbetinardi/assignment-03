@@ -1,0 +1,3 @@
+html.no-js { background-color: yellow; }
+html.has-js { background-color: cyan; }
+.valid { color: green; font-weight: bold; }
