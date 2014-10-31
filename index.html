@@ -1,80 +1,52 @@
 <!DOCTYPE html>
 <html lang="en-us" class="no-js">
 <head>
-  <title>Dropbox</title>
+    <title>Dropbox</title>
   
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-  <link rel="stylesheet" media="screen" href="css/reset.css" />
-  <link rel="stylesheet" media="screen" href="css/screen.css" />
+    <link rel="stylesheet" media="screen" href="css/reset.css" />
+    <link rel="stylesheet" media="screen" href="css/screen.css" />
+    <link rel="stylesheet" media="screen" href="css/formalize.css" />
   
-  <script src="modernizr.custom.32508.js"></script>
+    <script src="js/modernizr.custom.32508.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.formalize.js"></script>
+    <script src="js/javascript.js"></script>
 </head>
-
 <body>
-  <h1>your stuff, anywhere</h1>
- 
-  <form action="#null" id="signin" method="POST">
+    <form action="/login" id="login" method="post">
+        <legend>your stuff, anywhere</legend>
 
-    <fieldset>
-      <label for="email">E-mail</label>
-      <input type="email" name="email" id="email" placeholder="E-mail" />
-    </fieldset>
+        <fieldset class="user-name">
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email" placeholder="E-mail" autofocus />
+        </fieldset>
 
-    <fieldset>
-      <legend for="password">Password</legend>
+        <fieldset class="user-password">
+            <label for="pwd">Password</label><br>
 
-      <input type="radio" name="password" id="new-user" />
-      <label for="new-user">I don't have an account.</label>
-      
-      <input type="radio" name="password" id="exist-user" />
-      <label for="exist-user">
-        I have one:
-        <input type="password" name="password" id="password" placeholder="Password" />
-      </label>
-    </fieldset>
+            <input type="radio" name="password" id="new-user" value="no"/>
+            <label for="new-user">I don't have an account.</label><br>
 
-    <fieldset>
-      <label for="submit">Sign In</label>
-      <input type="submit" name="submit" id="submit" value="Sign In" />
-    </fieldset>
+            <input type="radio" name="password" id="exist-user" value="yes" checked />
+            <label for="exist-user">I have one:</label>
+        </fieldset>
 
-  </form>
+        <fieldset class="user-signin">
+            <input type="password" name="password" id="password" placeholder="Password" />            
+        </fieldset>
 
+        <fieldset class="user-signup">
+            <input type="text" name="first-name" id="first-name" placeholder="First Name" />
+            <input type="text" name="last-name" id="last-name" placeholder="Last Name" />
+            <input type="checkbox" name="term" value="term">I agree to Dropbox Terms
+        </fieldset>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<script>
-  jQuery.noConflict();
-  (function($) {
-    $(function() {
-      $('html').removeClass('no-js').addClass('has-js');
-      $('#username').blur(function() {
-        if ($(this).val() == 'lucasbetinardi') { $(this).addClass('valid'); }
-        
-      });
-    });
-  })(jQuery);
-</script>
-
-
-
-
-
+        <fieldset class="submit-button">
+            <input type="submit" name="submit" id="submit" value="Sign In" />
+        </fieldset>
+    </form>
 </body>
 </html>
