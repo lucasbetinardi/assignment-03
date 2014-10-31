@@ -1,0 +1,14 @@
+$(document).ready(function(){
+    $('input[type="radio"]').click(function(){
+        if($(this).attr("value")=="yes"){
+            $(".user-signin").show();
+            $(".user-signup").hide();
+            $("#login").attr("action","/signin");
+        }
+        if($(this).attr("value")=="no"){
+            $(".user-signin").show();
+            $(".user-signup").show();
+            $("#login").attr("action","/signup");
+        }
+    });
+});
