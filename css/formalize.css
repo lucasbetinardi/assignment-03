@@ -79,23 +79,22 @@ input[type="button"] {
   -webkit-background-clip: padding;
   -moz-background-clip: padding;
   background-clip: padding-box;
-  background: #dddddd url('../images/button.png?1298351022') repeat-x;
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #dddddd));
-  background-image: -webkit-linear-gradient(#ffffff, #dddddd);
-  background-image: -moz-linear-gradient(#ffffff, #dddddd);
-  background-image: -o-linear-gradient(#ffffff, #dddddd);
-  background-image: linear-gradient(#ffffff, #dddddd);
-  border: 1px solid;
-  border-color: #dddddd #bbbbbb #999999;
+  background: #007EE5 url('../images/button.png?1298351022') repeat-x;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #168ADD), color-stop(100%, #007EE5));
+  background-image: -webkit-linear-gradient(#168ADD, #007EE5);
+  background-image: -moz-linear-gradient(#168ADD, #007EE5);
+  background-image: -o-linear-gradient(#168ADD, #007EE5);
+  background-image: linear-gradient(#168ADD, #007EE5);
+  border: 2px solid;
+  border-color: #0C6EBE;
   cursor: pointer;
-  color: #333333;
+  color: #fff;
   display: inline-block;
-  font: bold 12px/1.3 "Helvetica Neue", Arial, "Liberation Sans", FreeSans, sans-serif;
+  font: Arial, "Liberation Sans", FreeSans, sans-serif;
   outline: 0;
   overflow: visible;
   margin: 0;
   padding: 3px 10px;
-  text-shadow: white 0 1px 1px;
   text-decoration: none;
   vertical-align: top;
   width: auto;
@@ -107,11 +106,11 @@ a.button:hover,
 input[type="reset"]:hover,
 input[type="submit"]:hover,
 input[type="button"]:hover {
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(1px, #eeeeee), color-stop(100%, #cccccc));
-  background-image: -webkit-linear-gradient(#ffffff, #eeeeee 1px, #cccccc);
-  background-image: -moz-linear-gradient(#ffffff, #eeeeee 1px, #cccccc);
-  background-image: -o-linear-gradient(#ffffff, #eeeeee 1px, #cccccc);
-  background-image: linear-gradient(#ffffff, #eeeeee 1px, #cccccc);
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #168EEF), color-stop(100%, #007EE5));
+  background-image: -webkit-linear-gradient(#168EEF, #007EE5);
+  background-image: -moz-linear-gradient(#168EEF, #007EE5);
+  background-image: -o-linear-gradient(#168EEF, #007EE5);
+  background-image: linear-gradient(#168EEF, #007EE5);
   text-decoration: none;
 }
 button:active,
