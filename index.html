@@ -17,31 +17,35 @@
 </head>
 <body>
     <form action="/login" id="login" method="post">
-        <legend>your stuff, anywhere</legend>
+        <figure>
+        <img src="img/logo.png" alt="Dropbox logo" />
+        </figure>
+
+        <h1>Your stuff, anywhere</h1>
 
         <fieldset class="user-name">
-            <label for="email">E-mail</label>
-            <input type="email" name="email" id="email" placeholder="E-mail" autofocus />
+            <label for="email" class="email">E-mail</label>
+            <input type="email" name="email" id="email" placeholder="E-mail" autofocus required autocomplete="off" />
         </fieldset>
 
         <fieldset class="user-password">
-            <label for="pwd">Password</label><br>
+            <label for="password" class="pwd">Password</label><br>
 
             <input type="radio" name="password" id="new-user" value="no"/>
-            <label for="new-user">I don't have an account.</label><br>
+            <label for="new-user">I don't have an account</label><br>
 
-            <input type="radio" name="password" id="exist-user" value="yes" checked />
+            <input type="radio" name="password" id="exist-user" value="yes" autocomplete="off" checked />
             <label for="exist-user">I have one:</label>
         </fieldset>
 
         <fieldset class="user-signin">
-            <input type="password" name="password" id="password" placeholder="Password" />            
+            <input type="password" name="password" id="password" placeholder="Password" required autocomplete="off" />            
         </fieldset>
 
         <fieldset class="user-signup">
-            <input type="text" name="first-name" id="first-name" placeholder="First Name" />
-            <input type="text" name="last-name" id="last-name" placeholder="Last Name" />
-            <input type="checkbox" name="term" value="term"> I agree to <a href="/terms">Dropbox Terms</a>
+            <input type="text" name="first-name" id="first-name" placeholder="First Name" autocomplete="off" />
+            <input type="text" name="last-name" id="last-name" placeholder="Last Name" autocomplete="off" />
+            <input type="checkbox" name="term" id="term" value="term" autocomplete="off"> I agree to <a href="/terms">Dropbox Terms</a>
         </fieldset>
 
         <fieldset class="submit-button">
