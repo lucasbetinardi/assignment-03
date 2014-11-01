@@ -2,6 +2,7 @@ $(document).ready(function(){
     $('.user-password').click(function(){
         if($('#new-user').is(':checked')){
             $(".user-signin").show();
+            $(".forgot").fadeOut();
             $(".user-signup").slideDown();
             $("#login").attr("action","/signup");
             $('#first-name').prop('required', true);
@@ -10,6 +11,7 @@ $(document).ready(function(){
         } 
         if($('#exist-user').is(':checked')){
             $(".user-signin").show();
+            $(".forgot").fadeIn();
             $(".user-signup").slideUp();
             $("#login").attr("action","/signin");
             $('#first-name').prop('required', false);
