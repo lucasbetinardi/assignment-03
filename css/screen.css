@@ -47,6 +47,13 @@ h1 {
   font-size: 1.75em;
 }
 
+h2 {
+  font-size: 0.9em;
+  position: relative;
+  float: right;
+  display: inline;
+}
+
 #email, #password, #first-name, #last-name {
   border: 0.1em solid #BDC4C9;
   font-size: 1em;
